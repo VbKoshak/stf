@@ -663,6 +663,7 @@ function DeviceStatusCell(options) {
   , unauthorized: 'state-unauthorized btn-danger-outline'
   , offline: 'state-offline btn-warning-outline'
   , automation: 'state-automation btn-info'
+  , unhealthy: 'state-unhealthy btn-danger-outline'
   }
 
   return _.defaults(options, {

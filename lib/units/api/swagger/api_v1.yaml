@@ -2430,6 +2430,8 @@ definitions:
         type: string
         enum: 
          - Disconnected
+         - Healthy
+         - Unhealthy
   DevicesPayload:
     description: Payload object for adding/removing devices
     properties:

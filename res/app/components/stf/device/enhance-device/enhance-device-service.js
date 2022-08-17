@@ -23,15 +23,16 @@ module.exports = function EnhanceDeviceServiceFactory($filter, AppState) {
           data.state = 'preparing'
           if (data.ready) {
             data.state = 'ready'
-            if (data.using) {
+            if (!data.healthy) {
+              data.state = 'unhealthy'
+            } else if (data.using) {
               if (data.usage === 'automation') {
                 data.state = 'automation'
               }
               else {
                 data.state = 'using'
               }
-            }
-            else {
+            } else {
               if (data.owner) {
                 data.state = 'busy'
               }

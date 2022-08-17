@@ -11,7 +11,8 @@ module.exports = function StateClassesService() {
       preparing: 'state-preparing btn-primary-outline btn-success-outline',
       unauthorized: 'state-unauthorized btn-danger-outline',
       offline: 'state-offline btn-warning-outline',
-      automation: 'state-automation btn-info'
+      automation: 'state-automation btn-info',
+      unhealthy: 'state-unhealthy btn-danger-outline'
     }[state]
     if (typeof stateClasses === 'undefined') {
       stateClasses = 'btn-default-outline'
@@ -29,7 +30,8 @@ module.exports = function StateClassesService() {
       preparing: 'state-preparing',
       unauthorized: 'state-unauthorized',
       offline: 'state-offline',
-      automation: 'state-automation'
+      automation: 'state-automation',
+      unhealthy: 'state-unhealthy'
     }[state]
     if (typeof stateClasses === 'undefined') {
       stateClasses = ''

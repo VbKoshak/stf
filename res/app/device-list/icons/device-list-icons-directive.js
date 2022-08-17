@@ -69,7 +69,8 @@ module.exports = function DeviceListIconsDirective(
             preparing: 'state-preparing btn-primary-outline btn-success-outline',
             unauthorized: 'state-unauthorized btn-danger-outline',
             offline: 'state-offline btn-warning-outline',
-            automation: 'state-automation btn-info'
+            automation: 'state-automation btn-info',
+            unhealthy: 'state-unhealthy btn-danger-outline' 
           }[state]
           if (typeof stateClasses === 'undefined') {
             stateClasses = 'btn-default-outline'
